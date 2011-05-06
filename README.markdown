@@ -33,9 +33,7 @@ This bundle was originally written in order to provide Sass snippets, but since 
 
     mkdir -p ~/Library/Application\ Support/TextMate/Bundles
     cd ~/Library/Application\ Support/TextMate/Bundles
-    wget http://github.com/mauriziodemagnis/ruby-sass-tmbundle/tarball/master
-    tar zxf *-ruby-sass-tmbundle*.tar.gz
-    rm *-ruby-sass-tmbundle*.tar.gz
+    curl -L https://github.com/mauriziodemagnis/ruby-sass-tmbundle/tarball/master | tar zx
     mv *-ruby-sass-tmbundle* "Ruby Sass.tmbundle"
     osascript -e 'tell app "TextMate" to reload bundles'
 
